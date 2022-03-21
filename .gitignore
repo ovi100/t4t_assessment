@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/components/login/.sass-cache
+/src/components/login/Login.css.map
 
 # testing
 /coverage

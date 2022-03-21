@@ -1,0 +1,253 @@
+.login-panel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  .image-panel {
+    position: relative;
+    width: 65vw;
+    background: radial-gradient(
+      99.87% 413.14% at 0% 4.98%,
+      #443453 0%,
+      #232323 28.23%,
+      #252425 100%
+    );
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 530px;
+      position: absolute;
+      top: 80px;
+      left: 187px;
+    }
+  }
+  .form-panel {
+    .form {
+      position: absolute;
+      top: 80px;
+      right: 230px;
+      background: #ffffff;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 50px;
+      text-align: center;
+
+      .logo {
+        img {
+          max-width: 100%;
+          height: auto;
+          margin: 0 auto;
+        }
+      }
+      .text {
+        color: #473558;
+        font-size: 30px;
+        margin-top: 15px;
+      }
+      .input-field {
+        width: 90%;
+        margin: 0 auto;
+
+        .input-box {
+          width: 100%;
+          height: 53px;
+          background: #ffffff;
+          border: 2px solid #666666;
+          border-radius: 10px;
+          color: #707070;
+          display: block;
+          font-size: 16px;
+          margin-top: 20px;
+          padding: 15px;
+          transition: all 0.3s linear;
+
+          &:focus {
+            outline: none;
+            border: 2px solid #2560d7;
+          }
+        }
+        .reset-password {
+          margin-top: 10px;
+          text-align: right;
+
+          a {
+            color: #ff0000;
+            font-size: 16px;
+            text-decoration: none;
+          }
+        }
+        .submit-button {
+          margin: 20px 0;
+          button {
+            width: 100%;
+            background: #3e489a;
+            border: 0;
+            border-radius: 10px;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 700;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .form-divider {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px solid #666666;
+        margin-bottom: 30px;
+        padding: 20px 0;
+
+        span {
+          position: absolute;
+          top: 15px;
+          left: 45%;
+          width: 50px;
+          height: 50px;
+          background: #ffffff;
+          //box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+          border-radius: 50%;
+          color: #333333;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+        }
+      }
+      .social-icon {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        a {
+          display: inline-block;
+
+          img {
+            max-height: 50px;
+          }
+        }
+      }
+      .no-account {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 45px;
+        text-align: center;
+
+        a {
+          color: #707070;
+          text-decoration: none;
+
+          span {
+            color: #3faeef;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Queries for Desktop
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+  .login-panel {
+    .image-panel {
+      width: 62vw;
+
+      img {
+        width: 465px;
+      }
+    }
+    .form-panel {
+      .form {
+        top: 40px;
+        right: 60px;
+      }
+    }
+  }
+}
+
+// Media Queries for Laptop
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .login-panel {
+    .image-panel {
+      width: 60vw;
+
+      img {
+        width: 445px;
+        top: 85px;
+        left: 65px;
+      }
+    }
+    .form-panel {
+      .form {
+        top: 70px;
+        right: 25px;
+        padding: 25px;
+
+        .text{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+
+// Media Queries for Tablets
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .login-panel {
+    .image-panel {
+      width: 100vw;
+
+      img {
+        width: 335px;
+        top: 40px;
+        left: 65px;
+      }
+    }
+    .form-panel {
+      .form {
+        top: 70px;
+        right: 25px;
+        padding: 25px;
+
+        .text{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries for Mobile
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .login-panel {
+    display: block;
+    .image-panel {
+      display: none;
+    }
+    .form-panel {
+      .form {
+        top: 70px;
+        right: 0;
+        box-shadow: none;
+        padding: 25px;
+
+        .text{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
